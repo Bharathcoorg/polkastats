@@ -2,8 +2,8 @@
 require('dotenv').config();
 
 export const backendConfig = {
-  substrateNetwork: process.env.SUBSTRATE_NETWORK || 'kusama',
-  wsProviderUrl: process.env.WS_PROVIDER_URL || 'ws://substrate-node:9944',
+  substrateNetwork: process.env.SUBSTRATE_NETWORK || 'Edgeware',
+  wsProviderUrl: process.env.WS_PROVIDER_URL || 'wss://mainnet.edgewa.re',
   postgresConnParams: {
     user: process.env.POSTGRES_USER || 'polkastats',
     host: process.env.POSTGRES_HOST || 'postgres',
