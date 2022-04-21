@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "PolkaStats NG frontend",
-  "author": "Mario Pino Uceda",
+  "description": "Edgscan frontend",
+  "author": "Edgscan",
   "license": "Apache-2.0",
   "scripts": {
     "dev": "nuxt",
