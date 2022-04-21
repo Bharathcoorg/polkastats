@@ -40,14 +40,14 @@
           <nuxt-link
             :to="localePath('/')"
             class="navbar-brand"
-            title="PolkaStats block explorer"
+            title="Edgeware block explorer"
           >
-            <img class="logo" src="/img/polkastats_logo_dark@1x.png" />
+            <img class="logo" src="/img/edgeware_logo_dark@1x.png" />
           </nuxt-link>
         </b-navbar-brand>
         <a
           v-if="config.coinGeckoDenom && USDConversion && USD24hChange"
-          :href="`https://www.coingecko.com/en/coins/${config.coinGeckoDenom}`"
+          :href="`https://www.coingecko.com/en/coins/edgeware`"
           target="_blank"
           class="fiat mh-2"
         >
@@ -71,14 +71,6 @@
               <b-dropdown-item :to="localePath('/staking/validators')">
                 {{ $t('layout.default.validators') }}
               </b-dropdown-item>
-              <b-dropdown-item
-                :to="localePath('/staking/polkastats-validator')"
-              >
-                {{ $t('layout.default.validator') }}
-              </b-dropdown-item>
-              <b-dropdown-item :to="localePath('/staking/how-to-stake')">
-                {{ $t('layout.default.how_to_stake') }}
-              </b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item-dropdown text="Blockchain">
               <b-dropdown-item :to="localePath('/blocks')">
@@ -91,30 +83,6 @@
                 {{ $t('layout.default.events') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
-            <b-nav-item-dropdown>
-              <template #button-content>
-                <img
-                  class="network-logo"
-                  :src="`/img/networks/icons/${config.id}.svg`"
-                />
-                {{ config.name }}
-              </template>
-              <b-dropdown-item href="https://kusama.polkastats.io">
-                <img
-                  class="network-logo"
-                  src="/img/networks/icons/kusama.svg"
-                />
-                KUSAMA
-              </b-dropdown-item>
-              <b-dropdown-item href="https://polkastats.io">
-                <img
-                  class="network-logo"
-                  src="/img/networks/icons/polkadot.svg"
-                />
-                POLKADOT
-              </b-dropdown-item>
-            </b-nav-item-dropdown>
-            <Languages />
           </b-navbar-nav>
         </b-collapse>
       </b-container>
@@ -127,7 +95,6 @@
         </template>
       </b-modal>
     </b-navbar>
-    <CoinZillaBanner />
   </div>
 </template>
 
@@ -182,3 +149,4 @@ export default {
   },
 }
 </script>
+
