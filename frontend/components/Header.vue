@@ -83,6 +83,7 @@
                 {{ $t('layout.default.events') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
+            <b-nav-item right href="https://evm.edgscan.live/">EVM Explorer</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-container>
