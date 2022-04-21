@@ -1,14 +1,14 @@
 export const config = {
-  id: 'polkadot',
-  name: 'Polkadot',
-  tokenSymbol: 'DOT',
-  tokenDecimals: 10,
+  id: 'edgeware',
+  name: 'Edgeware',
+  tokenSymbol: 'EDG',
+  tokenDecimals: 18,
   ss58Format: 0,
-  coinGeckoDenom: 'polkadot',
-  nodeWs: 'wss://rpc.polkadot.io',
-  backendWs: 'wss://polkadot.polkastats.io/graphql',
-  backendHttp: 'https://polkadot.polkastats.io/graphql',
-  backendAPI: 'https://polkadot.polkastats.io',
+  coinGeckoDenom: 'edgeware',
+  nodeWs: 'wss://edgeware.api.onfinality.io/public',
+  backendWs: 'wss://edgscan.live/graphql',
+  backendHttp: 'https://edgscan.live/graphql',
+  backendAPI: 'https://edgscan.live',
   googleAnalytics: 'UA-144344973-1',
   theme: '@/assets/scss/themes/polkastats.scss',
   // ranking
@@ -20,45 +20,25 @@ export const config = {
 export const links = {
   account: [
     {
-      name: 'Dotscanner',
-      path: 'https://dotscanner.com/polkadot/account/',
-      icon: 'dotscanner.png',
-    },
-    {
-      name: 'Kodadot',
-      path: 'https://kodadot.xyz/rmrk/u/',
-      icon: 'kodadot.png',
-    },
-    {
-      name: 'Polkascan',
-      path: 'https://polkascan.io/polkadot/account/',
-      icon: 'polkascan.png',
-    },
-    {
-      name: 'Singular (NFTs)',
-      path: 'https://singular.rmrk.app/space/',
-      icon: 'singular.svg',
-    },
-    {
       name: 'SubID',
       path: 'https://sub.id/',
       icon: 'subid.svg',
     },
     {
       name: 'Subscan',
-      path: 'https://polkadot.subscan.io/account/',
+      path: 'https://edgeware.subscan.io/account/',
       icon: 'subscan.svg',
     },
   ],
   validator: [
     {
       name: 'Polkadot JS Apps',
-      path: 'https://polkadot.js.org/apps/?rpc=wss://rpc.polkadot.io#/staking/query/',
+      path: 'https://polkadot.js.org/apps/?rpc=wss://edgeware.api.onfinality.io/public#/staking/query/',
       icon: 'polkadot-js.png',
     },
     {
       name: 'Subscan',
-      path: 'https://kusama.subscan.io/validator/',
+      path: 'https://edgeware.subscan.io/validator/',
       icon: 'subscan.svg',
     },
   ],
