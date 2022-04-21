@@ -14,7 +14,7 @@ export default {
         async: true,
       },
     ],
-    title: 'PolkaStats | Polkadot block explorer',
+    title: 'Edgscan | Edgware Block Explorer',
     htmlAttrs: {
       lang: 'en',
     },
@@ -24,7 +24,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'PolkaStats block explorer',
+        content: 'Edgware Block Explorer',
       },
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
