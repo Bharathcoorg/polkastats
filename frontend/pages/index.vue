@@ -60,12 +60,12 @@ export default {
   },
   head() {
     return {
-      title: 'PolkaStats block explorer',
+      title: 'Edgeware Block Explorer',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'PolkaStats block explorer',
+          content: 'Edgeware Block Explorer',
         },
       ],
     }
