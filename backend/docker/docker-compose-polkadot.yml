@@ -103,7 +103,7 @@ services:
       HASURA_GRAPHQL_DATABASE_URL: 'postgres://polkastats:polkastats@postgres:5432/polkastats'
       HASURA_GRAPHQL_ENABLE_CONSOLE: 'true' # set to 'false' to disable console
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: 'startup, http-log, webhook-log, websocket-log, query-log'
-      HASURA_GRAPHQL_CORS_DOMAIN: http://localhost:3000, https://polkastats.io, https://polkadot.polkastats.io, https://dev.polkadot.polkastats.io, http://polkastats.io:8082
+      HASURA_GRAPHQL_CORS_DOMAIN: http://localhost:3000, https://edgscan.live, https://dev.edgscan.live, http://edgscan.live:8082
       HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
       HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET}
   
@@ -122,8 +122,8 @@ services:
     environment:
       NODE_ENV: 'production'
       NODE_OPTIONS: '--max-old-space-size=8192'
-      WS_PROVIDER_URL: 'ws://substrate-node:9944'
-      SUBSTRATE_NETWORK: 'kusama'
+      WS_PROVIDER_URL: 'wss://mainnet.edgewa.re'
+      SUBSTRATE_NETWORK: 'edgeware'
       # RANKING_DISABLE: 'true'
       # ACTIVE_ACCOUNTS_DISABLE: 'true'
       # BLOCK_LISTENER_DISABLE: 'true'
@@ -175,7 +175,7 @@ services:
       - 'substrate-node'
     restart: always
     environment:
-      - SAS_SUBSTRATE_WS_URL=ws://substrate-node:9944
+      - SAS_SUBSTRATE_WS_URL=wss://mainnet.edgewa.re
       - SAS_EXPRESS_BIND_HOST=sidecar
       - SAS_EXPRESS_PORT=9090  
 
