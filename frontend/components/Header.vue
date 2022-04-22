@@ -42,7 +42,7 @@
             class="navbar-brand"
             title="Edgeware block explorer"
           >
-            <img class="logo" src="edgeware_logo_dark@1x.png" />
+            <img class="logo" src="/img/edgeware_logo_dark@1x.png" />
           </nuxt-link>
         </b-navbar-brand>
         <a
