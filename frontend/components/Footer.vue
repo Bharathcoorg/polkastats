@@ -6,7 +6,7 @@
           <div class="col-12 text-center">
             <img
               class="img-fluid"
-              src="edgeware_logo_light@1x.png"
+              src="/img/edgeware_logo_light@1x.png"
               style="max-width: 300px"
             />
           </div>
