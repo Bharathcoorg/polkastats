@@ -21,8 +21,8 @@ const postgresConnParams = {
     port: parseInt(process.env.POSTGRES_PORT) || 5432,
 };
 const port = process.env.PORT || 8000;
-const wsProviderUrl = 'ws://substrate-node:9944';
-const polkassemblyGraphQL = 'https://kusama.polkassembly.io/v1/graphql';
+const wsProviderUrl = 'wss://mainnet.edgewa.re';
+const polkassemblyGraphQL = 'https://mainnet.edgewa.re/graphql';
 const app = (0, express_1.default)();
 // middleware
 app.use((0, cors_1.default)());
@@ -317,4 +317,4 @@ app.get('/api/v1/charts/transfers', async (_req, res) => {
     });
 });
 // Start app
-app.listen(port, () => console.log(`PolkaStats API is listening on port ${port}.`));
+app.listen(port, () => console.log(`Edgeware API is listening on port ${port}.`));
