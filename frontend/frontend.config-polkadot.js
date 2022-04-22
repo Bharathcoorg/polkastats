@@ -33,7 +33,7 @@ export const links = {
   validator: [
     {
       name: 'Polkadot JS Apps',
-      path: 'https://polkadot.js.org/apps/?rpc=wss://edgeware.api.onfinality.io/public#/staking/',
+      path: 'https://polkadot.js.org/apps/?rpc=wss://edgeware.api.onfinality.io/public#/staking/query',
       icon: 'polkadot-js.png',
     },
     {
