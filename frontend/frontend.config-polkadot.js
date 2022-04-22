@@ -6,9 +6,9 @@ export const config = {
   ss58Format: 0,
   coinGeckoDenom: 'edgeware',
   nodeWs: 'wss://edgeware.api.onfinality.io/public',
-  backendWs: 'wss://edgscan.live/graphql',
-  backendHttp: 'https://edgscan.live/graphql',
-  backendAPI: 'https://edgscan.live',
+  backendWs: 'wss://wasm.edgscan.live/graphql',
+  backendHttp: 'https://wasm.edgscan.live/graphql',
+  backendAPI: 'https://wasm.edgscan.live',
   googleAnalytics: 'UA-144344973-1',
   theme: '@/assets/scss/themes/polkastats.scss',
   // ranking
@@ -33,7 +33,7 @@ export const links = {
   validator: [
     {
       name: 'Polkadot JS Apps',
-      path: 'https://polkadot.js.org/apps/?rpc=wss://edgeware.api.onfinality.io/public#/staking/query/',
+      path: 'https://polkadot.js.org/apps/?rpc=wss://edgeware.api.onfinality.io/public#/staking/',
       icon: 'polkadot-js.png',
     },
     {
