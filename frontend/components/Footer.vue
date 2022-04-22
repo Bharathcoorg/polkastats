@@ -6,7 +6,7 @@
           <div class="col-12 text-center">
             <img
               class="img-fluid"
-              src="/img/edgeware_logo_light@1x.png"
+              src="edgeware_logo_light@1x.png"
               style="max-width: 300px"
             />
           </div>
@@ -21,8 +21,8 @@
             title="Made by Finn Exchange"
             target="_blank"
             data-testid="github"
-            ><i class="fab fa-github" />
-            {{ $t('layout.default.made_by_finn_exchange') }}</a
+            >
+            Made by Finn Exchange</a
           >
         </p>
       </div>
